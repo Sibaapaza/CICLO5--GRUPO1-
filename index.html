@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Académico UPEU</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <style>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: hsl(0, 0%, 98%);
+    color: #333;
+    padding: 10px;
+}
+/* Estilo para la imagen en el encabezado */
+header .logo {
+    width: 200px; /* Ajusta el ancho a 200px */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: block;
+    margin: 0 auto 1rem; /* Centra la imagen y agrega un margen inferior */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+
+/* Estilos para el encabezado */
+header {
+    background-color: #007BFF; /* Azul moderno */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el encabezado */
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición suave */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Color dorado en hover */
+}
+
+/* Estilo de las secciones */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Sombra para secciones */
+}
+/* Estilo para la imagen en la sección de inicio */
+#inicio .logo {
+    width: 250px; /* Cambia a un tamaño más pequeño, por ejemplo 100px */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: block;
+    margin: 0 auto 1rem; /* Centra la imagen horizontalmente */
+    border-radius: 50px; /* Si deseas bordes redondeados */
+}
+
+/* Colores de fondo para cada sección */
+#inicio {
+    background-color: #ffcccc; /* Rojo suave */
+}
+
+#bibliografia {
+    background-color: #cce5ff; /* Azul suave */
+}
+
+#habilidades {
+    background-color: #d4edda; /* Verde suave */
+}
+
+#proyectos {
+    background-color: #ffeeba; /* Amarillo suave */
+}
+
+#galeria {
+    background-color: #f8d7da; /* Rosa suave */
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan */
+}
+
+.galeria img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: transform 0.3s; /* Transición suave al hover */
+}
+
+.galeria img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al hover */
+}
+
+/* Estilo del formulario de contacto */
+#contacto {
+    background-color: #fff3cd; /* Amarillo claro */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s; /* Transición suave en el borde */
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #007BFF; /* Cambia el color del borde al enfocar */
+}
+
+/* Estilo del botón */
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007BFF; /* Azul moderno */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al hover */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333; /* Gris oscuro */
+    color: white;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="logo.jpg" alt="D:\CURSOS SE 2024\1 SISTEMAS INTEGRALES DE GESTIÓN\UNIDAD II\SESIÓN I\mi primera -web\imagenes\upeu.web" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#bibliografia">Bibliografía</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        
+        <h1>Sarai Siba Apaza Turpo</h1>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>¡Bienvenidos a mi página web personal! Soy Sarai, estudiante de Administración, apasionado por la tecnología y
+            la gestión empresarial.Me encanta aprender sobre innovación,optimización de procesos y cómo la tecnologia puede transformar las organizaciones.Aquí encontrarás mis proyectos,habilidades y experiencias que reflejan mi compromiso con el crecimiento continuo en el mundo empresarial.</p>
+
+        <img src="logotipo.jpg" alt="Descripción de la imagen" class="logo">
+
+    </section>
+
+    <!-- Sección de Bibliografía -->
+    <section id="bibliografia">
+        <h2>Bibliografía</h2>
+        <p>Aquí encontrarás una breve descripción sobre mí. Soy Sarai Siba Apaza Turpo estudiante de Administración de la Universidad Peruan Unión.Estoy interesada en el marketing
+            digital, la gestión de proyectos y el análisis de datos. Siempre busco nuevas formas de aplicar tecnología en el campo empresarial para mejorar la eficiencia y el desarrollo organizacional
+            Además, en mi tiempo libre disfruto jugar básquet y leer cómics.</p>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Capacidad de planificación y organización.</li>
+            <li>Capacidad de trabajo en equipo.</li>
+            <li>Análisis de Datos(analisis financiero).</li>
+            <li>Capacidad de innovación y creatividad(Edición de video,Diseño gráfico: adobe photoshop).</li>
+            <li>Capacidad de adaptación.</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <p>Aquí puedes encontrar algunos de mis proyectos recientes:</p>
+        <ul>
+            <li><strong>Proyecto 1:</strong> Gestión de inventarios para pequeñas empresas.</li>
+            <li><strong>Proyecto 2:</strong> Estrategias de marketing digital para startups.</li>
+            <li><strong>Proyecto 3:</strong> Análisis de datos financieros para mejorar la toma de decisiones.</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Galería de Fotos o Multimedia -->
+    <section id="galeria">
+        <h2>Galería de Fotos o Multimedia</h2>
+
+        <video controls width="600">
+            <source src="tu-video.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <div class="galeria">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+
+
+        <iframe width="668" height="376" src="https://www.youtube.com/embed/wUs1xVpLPT0"
+            title="Buscas - Video Con Letras" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</apazaturposiba@gmail.com >
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Mi Página Personal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
